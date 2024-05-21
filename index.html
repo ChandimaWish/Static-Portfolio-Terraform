@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandima Wishwajith Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .profile-image {
+            display: block;
+            margin: 2rem auto;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        .project, .review {
+            background: white;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover, .review:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .project-title, .review-title {
+            margin-top: 0;
+        }
+        .animate-fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chandima Wishwajith Portfolio</h1>
+    </header>
+    <img src="https://myterraformprojectwebsite2024.s3.amazonaws.com/Profile.jpeg" alt="Profile Picture" class="profile-image">
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project animate-fade-in">
+            <h3 class="project-title">Project 1: Website Redesign</h3>
+            <p>Description: Redesigned a corporate website to improve user experience and accessibility.</p>
+        </div>
+        <div class="project animate-fade-in">
+            <h3 class="project-title">Project 2: E-commerce Platform</h3>
+            <p>Description: Developed an e-commerce platform with integrated payment gateway and inventory management.</p>
+        </div>
+        <div class="project animate-fade-in">
+            <h3 class="project-title">Project 3: Mobile App Development</h3>
+            <p>Description: Created a cross-platform mobile app for tracking fitness activities and goals.</p>
+        </div>
+    </section>
+    <section id="reviews" class="container">
+        <h2>Reviews</h2>
+        <div class="review animate-fade-in">
+            <h3 class="review-title">Client Review 1</h3>
+            <p>"Chandima delivered the project ahead of schedule and exceeded our expectations in every way. Highly recommended!"</p>
+        </div>
+        <div class="review animate-fade-in">
+            <h3 class="review-title">Client Review 2</h3>
+            <p>"Outstanding work! The new website design has significantly boosted our traffic and user engagement."</p>
+        </div>
+        <div class="review animate-fade-in">
+            <h3 class="review-title">Client Review 3</h3>
+            <p>"Professional, reliable, and highly skilled. Chandima is our go-to developer for all our technical needs."</p>
+        </div>
+    </section>
+</body>
+</html>
